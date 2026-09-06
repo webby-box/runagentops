@@ -1,0 +1,205 @@
+/* plain personal page — system fonts, near-black on white */
+
+:root {
+  --bg: #fff;
+  --ink: #111;
+  --muted: #444;
+  --line: #ddd;
+  --max: 36rem;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+a {
+  color: var(--ink);
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.wrap {
+  width: min(100% - 2rem, var(--max));
+  margin-inline: auto;
+  padding: 1.5rem 0 3rem;
+}
+
+.site-header {
+  margin-bottom: 2rem;
+}
+
+.brand {
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.brand:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.lede {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+}
+
+.lede:last-child {
+  margin-bottom: 0;
+}
+
+.section {
+  margin: 0;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.section h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.section p {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.offer {
+  margin: 0 0 1.25rem;
+  padding: 0;
+}
+
+.offer:last-child {
+  margin-bottom: 0;
+}
+
+.offer-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.offer h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.price {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.offer-body {
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+}
+
+.offer-grid {
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.35rem 0;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  background: none;
+  border: none;
+}
+
+.btn:hover {
+  text-decoration-thickness: 2px;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.points {
+  margin: 0.75rem 0 0;
+  padding: 0 0 0 1.15rem;
+  color: var(--muted);
+}
+
+.points li {
+  margin: 0 0 0.6rem;
+}
+
+.points li:last-child {
+  margin-bottom: 0;
+}
+
+.points strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.points strong::after {
+  content: " — ";
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.site-footer {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+}
